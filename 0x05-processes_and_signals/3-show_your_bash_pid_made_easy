@@ -2,4 +2,4 @@
 # Write a bash script that displays the PID, along with process
 # name of processes which name contains the word bash.
 
-pgrep -f bash | xargs -I{} echo "{} $(ps -o cmd= {})"
+pgrep -l bash
