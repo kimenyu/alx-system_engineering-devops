@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#list all processes
+# This script displays a list of currently running processes
 
-ps axf -o user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,command
+ps auxf
