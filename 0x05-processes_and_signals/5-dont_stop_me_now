@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Duplicate exercise 4, but use kill to stop process.
+#stops our 4-to_infinity_and_beyond process using ctrl+c
 
-kill "$(ps -aux | pgrep -f 4-to_infinity_and_beyond)"
+kill "$(pgrep -f 4-to_infinity_and_beyond)"
