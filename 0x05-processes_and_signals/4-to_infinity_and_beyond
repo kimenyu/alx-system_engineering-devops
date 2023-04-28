@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-#displays 'To infinity and beyond' indefinitely
-#three
+# Write a bash script that displays
+# 'To infinity and beyond' indef
 
-
-while true
-do
-    echo "To infinty and beyond"
+while true; do
+    echo "To infinity and beyond"
     sleep 2
 done
