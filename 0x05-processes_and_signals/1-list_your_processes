@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #list all processes
 
-ps axuf
+ps axf -o user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,command
