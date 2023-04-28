@@ -4,10 +4,7 @@
 
 
 pids=$(pgrep bash)
-
-# Loop through the PIDs and display the PID and process name
 for pid in $pids; do
     name=$(cat /proc/$pid/cmdline | tr '\0' ' ')
     echo "PID: $pid, Name: $name"
 done
-
