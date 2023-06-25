@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
-#  script that creates an RSA key pair
+# Bash script that creates an RSA key pair
+#ssh-keygen -b 4096 -P betty -f school
+key_name="school"
+key_bits=4096
 
-ssh-keygen -b 4096 -f school -t rsa -N betty
+# Generate the RSA key pair
+ssh-keygen -t rsa -b $key_bits -f $key_name
+
+echo "RSA key pair created:"
+echo "Private key: ${key_name}"
+echo "Public key: ${key_name}.pub"
