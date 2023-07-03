@@ -10,10 +10,10 @@ apt-get -y install haproxy
 # edit config file
 server_config=\
 "
-frontend  kimenyu-frontend
+frontend kimenyu-frontend
         bind *:80
         mode http
-        default_backend ehoneah-backend
+        default_backend kimenyu-backend
 backend kimenyu-backend
         balance roundrobin
         server 194413-web-01 52.207.208.233:80 check
