@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-#check if nginx is running
-sudo systemctl status nginx
-#if it's not runnong 
-sudo systemctl start nginx
-#verify firewall settings 
-sudo ufw status
-#allowing incoming traffic
-sudo ufw allow 80
+#comment
+file=/etc/nginx/sites-enabled/default
+sed -i 's/8080 default/80 default/' $file
+sudo service nginx restart
