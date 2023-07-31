@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# script that configures a new Ubuntu machine
+#script that configures a new Ubuntu machine
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
